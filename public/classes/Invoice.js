@@ -3,10 +3,9 @@ export class Invoice {
         this.client = client;
         this.details = details;
         this.amount = amount;
-        this.bank = 'Bank of America';
     }
     format() {
-        return `shortInvoice: ${this.client} owes $${this.amount} for ${this.details}`;
+        return `${this.client} owes $${this.amount} for ${this.details}`;
     }
 }
 // class longInvoice {

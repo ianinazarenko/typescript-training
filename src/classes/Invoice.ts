@@ -1,7 +1,6 @@
-import { HasFormatter } from '../interfaces/HasFormatter.js';
+import { HasFormatter } from '../interfaces/HasFormatter.js'
 
 export class Invoice implements HasFormatter {
-  bank: string = 'Bank of America';
   constructor(
     readonly client: string,
     private details: string,
@@ -9,7 +8,7 @@ export class Invoice implements HasFormatter {
   ) {}
 
   format() {
-    return `shortInvoice: ${this.client} owes $${this.amount} for ${this.details}`;
+    return `${this.client} owes $${this.amount} for ${this.details}`
   }
 }
 
